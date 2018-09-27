@@ -1,0 +1,7 @@
+<% events.each do | current_event | %>
+  <%= render 'events/single_event', event: current_event %>
+  <%= link_to "More details", event_path(current_event)%>
+  <p>
+    <hr />
+  </p>
+<% end %>

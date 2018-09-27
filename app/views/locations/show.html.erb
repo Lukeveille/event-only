@@ -1,6 +1,6 @@
 <h1><%= @location.name %></h1>
 
-<%= render 'single_location', location: @location %>
+<%= render partial: 'single_location', locals: {location: @location, show_title: false} %>
 
 <%= link_to 'Edit', edit_location_path(@location) %>
 

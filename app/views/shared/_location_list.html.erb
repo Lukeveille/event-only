@@ -1,0 +1,5 @@
+<% @locations.each do |current_location| %>
+  <%= render partial: 'locations/single_location', locals: {location: current_location, show_title: true} %>
+  <hr />
+  <%= render partial: 'locations/location_form', locals: {location: current_location} if show_form %>
+<% end %>

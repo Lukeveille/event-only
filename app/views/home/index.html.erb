@@ -1,7 +1,12 @@
-
 <p>
   <%= link_to 'View Locations', locations_path %>
 </p>
 <p>
   <%= link_to 'Events', events_path %>
 </p>
+
+<hr />
+
+<%= render partial: 'shared/location_list', locals: {locations: @locations, show_form: false} %>
+
+<%= render 'shared/event_list', events: @events %>
